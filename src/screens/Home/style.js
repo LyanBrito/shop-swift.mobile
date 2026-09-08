@@ -1,7 +1,10 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.View`
-    gap: 40px;
+export const Container = styled.ScrollView.attrs({
+    contentContainerStyle: {
+        gap: 40
+    }
+})`
     padding: 20px;
 `;
 
@@ -23,3 +26,14 @@ export const Scroll = styled.ScrollView.attrs({
         gap: 20
     }
 })``;
+
+export const ProductsWrapper = styled.View`
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 20px;
+`

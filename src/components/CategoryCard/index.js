@@ -1,13 +1,13 @@
 import {Image, Text, View} from "react-native";
-import {CardContainer} from "./styles";
+import {CardContainer, CardLabel} from "./styles";
 
 export const CategoryCard = ({label, image}) => {
     return (
         <CardContainer>
             <Image source={image}/>
-            <Text>
+            <CardLabel>
                 {label}
-            </Text>
+            </CardLabel>
         </CardContainer>
     )
 }
