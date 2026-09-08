@@ -6,7 +6,7 @@ export const Container = styled.View`
 `;
 
 export const HighlightsSection = styled.View`
-    gap: 5px;
+    gap: 12px;
 `;
 
 export const TitleHighlight = styled.Text`
